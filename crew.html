@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jungle Jamboree</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/crew.css" />
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Navbar Start -->
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand">
+          <h1 class="m-0 text-primary">
+            <!-- <i class="fa fa-book-reader me-3"></i> -->
+            <img src="./img/logo.jpg" class="img-logo" alt="logo" />
+            Jungle Jamboree
+          </h1>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Pages</a
+              >
+              <div
+                class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0"
+              >
+                <a href="./profile.html" class="dropdown-item profileNavLink"
+                  >Profile</a
+                >
+                <a href="./camps.html" class="dropdown-item">Camps</a>
+                <a href="./trips.html" class="dropdown-item">Trips</a>
+                <a href="./events.html" class="dropdown-item">Events</a>
+                <a href="./birthday.html" class="dropdown-item">Birthdays</a>
+                <a href="./crew.html" class="dropdown-item active">Crew</a>
+                <a href="./child.html" class="dropdown-item">Childs</a>
+              </div>
+            </div>
+          </div>
+          <a
+            class="btn signInOut btn-primary rounded-pill px-3 d-none d-lg-block"
+            ><i class="fa fa-arrow-right ms-3"></i
+          ></a>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Page Header End -->
+      <div class="container-xxl py-5 staf-bg-img position-relative mb-5">
+        <div class="container py-5">
+          <h1 class="display-2 text-white animated slideInDown mb-4">
+            Our Crew
+          </h1>
+        </div>
+      </div>
+      <!-- Page Header End -->
+
+      <!-- Team Start -->
+      <div class="container-xxl py-5">
+        <div class="container"></div>
+
+        <div class="container-xxl py-5">
+          <div class="container">
+            <div class="bg-light rounded">
+              <div class="row g-0">
+                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                  <div
+                    class="h-100 d-flex flex-column justify-content-center p-5"
+                  >
+                    <h1 class="mb-4">Join Us</h1>
+                    <form id="crewForm">
+                      <div class="row g-3">
+                        <div class="col-sm-6">
+                          <div class="form-floating">
+                            <input
+                              type="text"
+                              class="form-control border-0"
+                              id="nameInput"
+                              placeholder=" Name"
+                              name="Name"
+                            />
+
+                            <label for="nameInput"> Name</label>
+                          </div>
+                          <p
+                            id="nameInputAlert"
+                            class="alert alert-danger small text-capitalize p-2 d-none"
+                          >
+                            at least two characters
+                          </p>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-floating">
+                            <input
+                              type="email"
+                              class="form-control border-0"
+                              id="emailInput"
+                              placeholder=" Email"
+                              name="Email"
+                            />
+                            <label for="emailInput"> Email</label>
+                          </div>
+                          <p
+                            id="emailInputAlert"
+                            class="alert alert-danger small text-capitalize p-2 d-none"
+                          >
+                            email is not valid
+                          </p>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="form-floating">
+                            <input
+                              type="tel"
+                              class="form-control border-0"
+                              id="phoneInput"
+                              placeholder="Phone"
+                              name="phone"
+                            />
+                            <label for="phoneInput"> Phone</label>
+                          </div>
+                          <p
+                            id="phoneInputAlert"
+                            class="alert alert-danger small text-capitalize p-2 d-none"
+                          >
+                            Invalid phone number. <br />
+                            Please enter a valid Egyptian phone number. <br>
+                            you can start with"+20" or "0020" or "0".
+                          </p>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="form-floating">
+                            <input
+                              type="date"
+                              class="form-control border-0"
+                              placeholder="Date Of Birth"
+                              name="date"
+                              id="dateCrewInput"
+                            />
+                            <label for="dateCrewInput">Date Of Birth</label>
+                          </div>
+                          <p
+                            id="dateCrewInputAlert"
+                            class="alert alert-danger small text-capitalize p-2 d-none"
+                          >
+                            Date is not selected
+                          </p>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-floating">
+                            <input
+                              type="text"
+                              class="form-control border-0"
+                              id="addressInput"
+                              placeholder=" Adress"
+                              name="Address"
+                            />
+                            <label for="addressInput"> Address</label>
+                          </div>
+                          <p
+                            id="addressInputAlert"
+                            class="alert alert-danger small text-capitalize p-2 d-none"
+                          >
+                            Give Me Address at least four characters
+                          </p>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="Gender"
+                              id="male"
+                              value="1"
+                            />
+                            <label class="form-check-label" for="male">
+                              Male
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="Gender"
+                              id="female"
+                              value="2"
+                            />
+                            <label class="form-check-label" for="female">
+                              Female
+                            </label>
+                          </div>
+                        </div>
+                        <p
+                          id="genderInputAlert"
+                          class="alert alert-danger small text-capitalize p-2 d-none"
+                        >
+                          gender is not selected
+                        </p>
+                        <div class="col-12">
+                          <div>
+                            <label for="pictureInput" class="form-label"
+                              >Upload Your Picture</label
+                            >
+                            <input
+                              class="form-control form-control-lg"
+                              id="pictureInput"
+                              type="file"
+                              name="Picture"
+                            />
+                          </div>
+                          <p
+                            id="pictureInputAlert"
+                            class="alert alert-danger small text-capitalize p-2 d-none"
+                          >
+                            Please Upload your picture
+                          </p>
+                        </div>
+                        <div class="col-12">
+                          <div>
+                            <label for="cvInput" class="form-label"
+                              >Upload Your Cv</label
+                            >
+                            <input
+                              class="form-control form-control-lg"
+                              id="cvInput"
+                              type="file"
+                              name="CV"
+                            />
+                          </div>
+                          <p
+                            id="cvInputAlert"
+                            class="alert alert-danger small text-capitalize p-2 d-none"
+                          >
+                            Please Upload your CV
+                          </p>
+                        </div>
+                     
+                        <button
+                          class="btn btn-primary w-100 py-3 d-flex justify-content-center align-items-center"
+                          type="submit"
+                        >
+                          Submit <div class="loader mx-2 d-none"></div>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h3 class="text-white mb-4">Get In Touch</h3>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>
+              The 5th Settlement New Cairo City
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>
+              <a href="tel:+02 01156107237">+02 01156107237</a>
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>
+              <a
+                href="mailto:junglejamboree375@gmail.com?subject=contact us&Jungle Jamboree"
+                >junglejamboree375@gmail.com</a
+              >
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://x.com/"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.facebook.com/"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.youtube.com/"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.linkedin.com/in/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3 class="text-white mb-4">Quick Links</h3>
+            <a class="btn btn-link text-white-50" href="./about.html"
+              >About Us</a
+            >
+            <a class="btn btn-link text-white-50" href="./contact.html"
+              >Contact Us</a
+            >
+            <a class="btn btn-link text-white-50" href="./birthday.html"
+              >Our Birthday</a
+            >
+            <a class="btn btn-link text-white-50" href="./camps.html"
+              >Our Camps</a
+            >
+            <a class="btn btn-link text-white-50" href="./trips.html"
+              >Our Trips</a
+            >
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3 class="text-white mb-4">Photo Gallery</h3>
+            <div class="row g-2 pt-2">
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded bg-light p-1"
+                  src="img/classes-1.jpg"
+                  alt="footer image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded bg-light p-1"
+                  src="img/classes-2.jpg"
+                  alt="footer image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded bg-light p-1"
+                  src="img/classes-3.jpg"
+                  alt="footer image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded bg-light p-1"
+                  src="img/classes-4.jpg"
+                  alt="footer image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded bg-light p-1"
+                  src="img/classes-5.jpg"
+                  alt="footer image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded bg-light p-1"
+                  src="img/classes-6.jpg"
+                  alt="footer image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy;
+              <a class="border-bottom" href="./index.html">Jungle Jamboree</a>,
+              All Right Reserved. Designed By
+              <a class="border-bottom" href="./index.html">Our Team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/crew.js"></script>
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

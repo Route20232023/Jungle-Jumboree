@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jungle Jamboree</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- ourCamps css -->
+    <!-- <link rel="stylesheet" href="./css/ourCamps.css" /> -->
+    <link rel="stylesheet" href="./css/whyChooseUs.css" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Navbar Start -->
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand">
+          <h1 class="m-0 text-primary">
+            <!-- <i class="fa fa-book-reader me-3"></i> -->
+            <img src="./img/logo.jpg" class="img-logo" alt="logo" />
+            Jungle Jamboree
+          </h1>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Pages</a
+              >
+              <div
+                class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0"
+              >
+                <a href="" class="dropdown-item profileNavLink">Profile</a>
+                <a href="./camps.html" class="dropdown-item">Camps</a>
+                <a href="./trips.html" class="dropdown-item">Trips</a>
+                <a href="./events.html" class="dropdown-item">Events</a>
+                <a href="./birthday.html" class="dropdown-item">Birthdays</a>
+                <a href="./crew.html" class="dropdown-item">Crew</a>
+                <a href="./child.html" class="dropdown-item">Childs</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="profile-icon me-2">
+            <i class="fa-solid fa-user"></i>
+          </div> -->
+          <div class="buttonNavRole">
+            <a
+            
+            class="btn signInOut btn-primary rounded-pill px-3 d-none d-lg-block"
+            ><i class="fa fa-arrow-right ms-3"></i
+          ></a>
+          </div>
+          
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Carousel Start -->
+      <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+          <div class="owl-carousel-item position-relative">
+            <img
+              class="img-fluid"
+              src="img/camps landing.jpg"
+              alt="landing image"
+            />
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+              style="background: rgba(0, 0, 0, 0.2)"
+            >
+              <div class="container">
+                <div class="row justify-content-start">
+                  <div class="col-10 col-lg-8">
+                    <h1 class="display-2 text-white animated slideInDown mb-4">
+                      The Best Kindergarten School For Your Child
+                    </h1>
+                    <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                      kids have the chance to interact with their peers from
+                      different backgrounds, fostering social skills and
+                      building new friendships.
+                    </p>
+                    <a
+                      href="./about.html"
+                      class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft"
+                      >Learn More</a
+                    >
+                    <a
+                      href="./camps.html"
+                      class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight"
+                      >Our Camps</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="img/Birthday Landing.jpg" alt="" />
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+              style="background: rgba(0, 0, 0, 0.2)"
+            >
+              <div class="container">
+                <div class="row justify-content-start">
+                  <div class="col-10 col-lg-8">
+                    <h1 class="display-2 text-white animated slideInDown mb-4">
+                      Make A Brighter Future For Your Child
+                    </h1>
+                    <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                      summer camps offer a unique and valuable experience for
+                      kids, combining fun-filled activities, personal
+                      development, and the opportunity to build lifelong
+                      memories.
+                    </p>
+                    <a
+                      href="./about.html"
+                      class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft"
+                      >Learn More</a
+                    >
+                    <a
+                      href="./camps.html"
+                      class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight"
+                      >Our Camps</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel End -->
+
+      <!-- types of camps start -->
+      <div
+        class="text-center mx-auto mb-5 wow fadeInUp"
+        data-wow-delay="0.1s"
+        style="max-width: 600px"
+      >
+        <h1 class="mb-3">Our Camps</h1>
+        <p>
+          Embark on an unforgettable summer adventure filled with laughter,
+          learning, and lifelong friendships at our captivating Kids
+        </p>
+      </div>
+      <div class="container-xxl">
+        <div class="row justify-content-center g-3" id="campsWrapper"></div>
+      </div>
+
+      <!-- types of camps End -->
+
+      <!-- About Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <h1 class="mb-4">
+                Learn More About Our Work And Our Cultural Activities
+              </h1>
+              <p>
+                At our organization, we are passionate about our work and
+                dedicated to promoting cultural activities that celebrate
+                diversity and foster a sense of belonging. Through our various
+                programs and initiatives, we strive to create an inclusive
+                environment that embraces different traditions, languages, and
+                customs.
+              </p>
+              <p class="mb-4">
+                These activities serve as a catalyst for cross-cultural
+                exchange, encouraging dialogue, understanding, and appreciation
+                among individuals from diverse backgrounds. We believe that by
+                engaging in cultural activities, we can bridge divides, promote
+                harmony, and create a vibrant community where everyone feels
+                valued and connected.
+              </p>
+              <div class="row g-4 align-items-center">
+                <div class="col-sm-6">
+                  <a
+                    class="btn btn-primary rounded-pill py-3 px-5"
+                    href="./about.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <img
+                    class="img-fluid w-75 rounded-circle bg-light p-3"
+                    src="img/about-1.jpg"
+                    alt="about-image"
+                  />
+                </div>
+                <div class="col-6 text-start" style="margin-top: -150px">
+                  <img
+                    class="img-fluid w-100 rounded-circle bg-light p-3"
+                    src="img/about-2.jpg"
+                    alt="about-img"
+                 />
+                </div>
+                <div class="col-6 text-end" style="margin-top: -150px">
+                  <img
+                    class="img-fluid w-100 rounded-circle bg-light p-3"
+                    src="img/about-3.jpg"
+                    alt="about-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+      <!-- Why Choose Us START-->
+      <div
+        class="text-center mx-auto mb-5 wow fadeInUp"
+        data-wow-delay="0.1s"
+        style="max-width: 600px"
+      >
+        <h1 class="mb-3">Why Choose Jungle Jamboree</h1>
+        <p>
+          Embark on an unforgettable summer adventure filled with laughter,
+          learning, and lifelong friendships at our captivating Kids
+        </p>
+      </div>
+      <div class="grid-contaiener">
+        <div class="Child1">
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="col-lg-6 p-0">
+                <img
+                  src="./img/why-birth-img.jpg"
+                  class="w-100 start-rounded h-100"
+                  alt="birthday parties"
+                />
+              </div>
+              <div class="col-lg-6 px-4">
+                <h3 class="py-4 heading-why">BirthDay Parties</h3>
+                <p>
+                  Birthday parties can take various forms, ranging from intimate
+                  gatherings to grand celebrations. Decorations, balloons,
+                  streamers, and colorful banners create a festive atmosphere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child2">
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="col-lg-6 p-0">
+                <img
+                  src="./img/camps-2.jpg"
+                  class="w-100 start-rounded h-100"
+                  alt="camps-image"
+                />
+              </div>
+              <div class="col-lg-6 px-4">
+                <h3 class="py-4 heading-why">Camps</h3>
+                <p>
+                  Summer camps are a cherished tradition that offers children
+                  and teenagers a unique and enriching experience during their
+                  summer break.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child3">
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="col-12 p-0">
+                <img
+                  src="./img/trips-img.jpg"
+                  class="w-100 start-rounded h-100"
+                  alt="trips-image"
+                />
+              </div>
+              <div class="col-12 px-4">
+                <h3 class="py-4 heading-why">Trips</h3>
+                <p class="">
+                  Trips, whether short or long, provide individuals with
+                  valuable opportunities to explore new places, cultures, and
+                  experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child4">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <img
+                  src="./img/activity.jpg"
+                  class="w-100"
+                  alt="school activity image"
+                />
+                <h3 class="py-4 heading-why">School Activites</h3>
+                <p>
+                  These activities are designed to enhance students' learning
+                  experiences, foster social development, and promote engagement
+                  within the school community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child5">
+          <div class="container-fluid">
+            <div class="row">
+              <img src="./img/leader-why.jpg" alt="" />
+              <div>
+                <h3 class="py-4 heading-why">Children LeaderShip Skills</h3>
+                <p>
+                  Developing leadership skills in children is a valuable
+                  endeavor that can empower them to become confident,
+                  responsible, and effective leaders in the future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child6">
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="col-lg-6 p-0">
+                <img
+                  src="./img/staff.jpg"
+                  class="w-100 start-rounded h-100"
+                  alt="team-image"
+                />
+              </div>
+              <div class="col-lg-6 px-4">
+                <h3 class="py-4 heading-why">Team And Staff</h3>
+                <p>
+                  Teams and staff are integral components of any organization,
+                  including schools. In the context of a school, teams and staff
+                  refer to groups of individuals who work together
+                  collaboratively to fulfill various roles and responsibilities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child7">
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="col-12 px-4">
+                <h3 class="py-4 heading-why">Special Offers And Promotions</h3>
+                <p>
+                  We are thrilled to announce an exciting offer for Members
+                  looking to join our esteemed Camps.We believe in recognizing
+                  and rewarding talent, providing opportunities for growth.
+                </p>
+              </div>
+              <div class="col-12">
+                <img
+                  src="./img/offer.jpg"
+                  class="start-rounded img-offer"
+                  alt="offer-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Us End  -->
+
+      <!-- Call To Action Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="bg-light rounded">
+            <div class="row g-0">
+              <div
+                class="col-lg-6 wow fadeIn"
+                data-wow-delay="0.1s"
+                style="min-height: 400px"
+              >
+                <div class="position-relative h-100">
+                  <img
+                    class="position-absolute w-100 h-100 rounded"
+                    src="img/staffff.webp"
+                    style="object-fit: cover"
+                    alt="staff joining image"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div
+                  class="h-100 d-flex flex-column justify-content-center p-5"
+                >
+                  <h1 class="mb-4">Become A Part Of Us</h1>
+                  <p class="mb-4">
+                    We are delighted to extend an invitation for you to become a
+                    valued member of our team. At our company, we recognize the
+                    importance of exceptional individuals like yourself who
+                    possess unique talents, skills, and experiences.
+                  </p>
+                  <a class="btn crewJoin btn-primary py-3 px-5" href=""
+                    >Join Us<i class="fa fa-arrow-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Call To Action End -->
+
+      <!-- Testimonial Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h1 class="mb-3">Our Clients Say!</h1>
+            <p>
+              Embark on an unforgettable summer adventure filled with laughter,
+              learning, and lifelong friendships at our captivating Kids
+            </p>
+          </div>
+          <div
+            class="owl-carousel testimonial-carousel wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="testimonial-item bg-light rounded p-5">
+              <p class="fs-5">
+                the quality of the work exceptional, I greatly appreciated the
+                regular updates and prompt responses to my inquiries.
+              </p>
+              <div
+                class="d-flex align-items-center bg-white me-n5"
+                style="border-radius: 50px 0 0 50px"
+              >
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonial-1.jpg"
+                  style="width: 90px; height: 90px"
+                />
+                <div class="ps-3">
+                  <h3 class="mb-1">martina wael</h3>
+                  <span>Profession</span>
+                </div>
+                <i
+                  class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"
+                ></i>
+              </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-5">
+              <p class="fs-5">
+                my experience with your company has been nothing short of
+                exceptional. I am thoroughly satisfied with the level of
+                professionalism.
+              </p>
+              <div
+                class="d-flex align-items-center bg-white me-n5"
+                style="border-radius: 50px 0 0 50px"
+              >
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonial-2.jpg"
+                  style="width: 90px; height: 90px"
+                />
+                <div class="ps-3">
+                  <h3 class="mb-1">Paula Magdy</h3>
+                  <span>Profession</span>
+                </div>
+                <i
+                  class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"
+                ></i>
+              </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-5">
+              <p class="fs-5">
+                I was particularly impressed by the knowledge and expertise of
+                your staff. They patiently listened to my requirements.
+              </p>
+              <div
+                class="d-flex align-items-center bg-white me-n5"
+                style="border-radius: 50px 0 0 50px"
+              >
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonial-3.jpg"
+                  style="width: 90px; height: 90px"
+                />
+                <div class="ps-3">
+                  <h3 class="mb-1">Mark toni</h3>
+                  <span>Profession</span>
+                </div>
+                <i
+                  class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial End -->
+
+      <!-- Appointment Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="bg-light rounded">
+            <div class="row g-0">
+              <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="h-100 p-3">
+                  <div class="contact-caption">
+                    <h2>Contact Information</h2>
+                    <p>
+                      We value open communication and are always here to assist
+                      you. If you have any questions, inquiries, or feedback
+                      regarding our services, please don't hesitate to reach out
+                      to us. Our dedicated team is available to provide support
+                      and address your concerns.
+                    </p>
+                    <p class="contact-details fs-5">Our contact details:</p>
+                    <div class="contact-list">
+                      <ul class="list-unstyled">
+                        <li class="fs-5">
+                          <i class="fa-solid fa-location-dot pe-2"></i>
+                          The 5th Settlement New Cairo City, Cairo Governorate
+                        </li>
+                        <li class="fs-5 py-3">
+                          <i class="fa-brands fa-whatsapp pe-2"></i>
+
+                          <a href="tel:+02 01156107237">+02 01156107237</a>
+                        </li>
+                        <li class="fs-5">
+                          <i class="fa-regular fa-envelope pe-2"></i>
+                          <a
+                            href="mailto:junglejamboree375@gmail.com?subject=contact us&Jungle Jamboree"
+                            >junglejamboree375@gmail.com</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 wow fadeIn p-3"
+                data-wow-delay="0.5s"
+                style="min-height: 400px"
+              >
+                <div class="position-relative h-100">
+                  <!-- <img
+                    class="position-absolute w-100 h-100 rounded"
+                    src="img/appointment.jpg"
+                    style="object-fit: cover"
+                  /> -->
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27641.276024654475!2d31.40567661035921!3d30.003576111325735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cc75436d909%3A0x7f921d4528ec3e03!2sThe%205th%20Settlement%2C%20Industrial%20Area%2C%20New%20Cairo%201%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1716907530669!5m2!1sen!2seg"
+                    width="100%"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Appointment End -->
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+              <h3 class="text-white mb-4">Get In Touch</h3>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>
+                The 5th Settlement New Cairo City
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>
+                <a href="tel:+02 01156107237">+02 01156107237</a>
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>
+                <a
+                  href="mailto:junglejamboree375@gmail.com?subject=contact us&Jungle Jamboree"
+                  >junglejamboree375@gmail.com</a
+                >
+              </p>
+              <div class="d-flex pt-2">
+                <a
+                  class="btn btn-outline-light btn-social"
+                  href="https://x.com/"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-social"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-social"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-social"
+                  href="https://www.linkedin.com/in/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <h3 class="text-white mb-4">Quick Links</h3>
+              <a class="btn btn-link text-white-50" href="./about.html"
+                >About Us</a
+              >
+              <a class="btn btn-link text-white-50" href="./contact.html"
+                >Contact Us</a
+              >
+              <a class="btn btn-link text-white-50" href="./birthday.html"
+                >Our Birthday</a
+              >
+              <a class="btn btn-link text-white-50" href="./camps.html"
+                >Our Camps</a
+              >
+              <a class="btn btn-link text-white-50" href="./trips.html"
+                >Our Trips</a
+              >
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <h3 class="text-white mb-4">Photo Gallery</h3>
+              <div class="row g-2 pt-2">
+                <div class="col-4">
+                  <img
+                    class="img-fluid rounded bg-light p-1"
+                    src="img/classes-1.jpg"
+                    alt="footer image"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    class="img-fluid rounded bg-light p-1"
+                    src="img/classes-2.jpg"
+                    alt="footer image"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    class="img-fluid rounded bg-light p-1"
+                    src="img/classes-3.jpg"
+                    alt="footer image"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    class="img-fluid rounded bg-light p-1"
+                    src="img/classes-4.jpg"
+                    alt="footer image"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    class="img-fluid rounded bg-light p-1"
+                    src="img/classes-5.jpg"
+                    alt="footer image"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    class="img-fluid rounded bg-light p-1"
+                    src="img/classes-6.jpg"
+                    alt="footer image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row justify-content-center">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy;
+                <a class="border-bottom" href="./index.html">Jungle Jamboree</a
+                >, All Right Reserved. Designed By
+                <a class="border-bottom" href="./index.html">Our Team</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- ourCamps -->
+    <!-- homejs -->
+    <script src="./js/home.js"></script>
+    <!--  Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
